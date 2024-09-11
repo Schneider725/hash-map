@@ -80,6 +80,18 @@ class hashMap {
             }
         }
     }
+    entries() {
+        for (const bucket of this.bucket) {
+            if (bucket) {
+                for (const item of bucket) {
+                    if (item !== undefined) {
+                        console.log(`${bucket[0]} ${bucket[1]}`);
+                    }
+                }
+            }
+        }
+    }
+
 
 }
 
